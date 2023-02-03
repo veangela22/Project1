@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Log in</title>
+</head>
+<body style="background-color: white;"> <!-- INLINE STYLE FOR PAGE COLOR-->
+    <nav class="topnav">
+        <div class="nav_left">
+          <a href="index.html"
+            ><img
+              src="./Images/logo.png"
+              alt="Community Library Logo"
+              width="200px"
+          /></a>
+        </div>
+        <div class="nav_right"> <!-- INLINE STYLE FOR ACTIVE PAGE-->
+          <a href="login.html" style="color: #eb4852; text-decoration: underline">Log In</a>
+          <a href="#">Locations</a>
+          <a href="#">Get a Library Card</a>
+          <a href="about.html">About Us</a
+          >
+          <button class="donate">Donate</button>
+        </div>
+      </nav>
+      <main class="login">
+        <div class="form_container">
+            <form action="server.php">
+                <fieldset class="form_information">
+                    <legend>Log In</legend>
+                    <br> Username or Barcode * <br>
+                    <input type="text" required>
+                    <br><br> PIN * <br>
+                    <input type="password" required>
+                    <br> <br>
+                    <div class="forgot_password">
+                        <a href="#">Forgot your PIN?</a>
+                        <input type="button" value="Log In" id="login_button">
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+        <div class="library_card">
+            <img src="./Images/login_card.png" width="300px" alt="Image of libary card">
+            <div class="library_card_info">
+                <h4>Need a Library Card?</h4>
+                <p>Community Library's card is free for anyone who lives, works, pays property taxes, or goes to school in New York City.</p>
+                <a href="#">Sign up now</a>
+            </div>
+      </main>
+</body>
+</html>

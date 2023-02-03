@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Search Our Catalog</title>
+  </head>
+  <body style="background-color: white">
+    <!-- INLINE STYLE FOR PAGE COLOR-->
+    <nav class="topnav">
+      <div class="nav_left">
+        <a href="index.html"
+          ><img
+            src="./Images/logo.png"
+            alt="Community Library Logo"
+            width="200px"
+        /></a>
+      </div>
+      <div class="nav_right">
+        <a href="login.html">Log In</a>
+        <a href="#">Locations</a>
+        <a href="#">Get a Library Card</a>
+        <a href="about.html">About Us</a>
+        <button class="donate">Donate</button>
+      </div>
+    </nav>
+    <main class="catalog">
+      <h1>Search: Catalog</h1>
+      <div class="catalog_search">
+        <div class="catalog_search_icon">
+          <input type="text" placeholder="Search our catalog in any language" />
+          <a href="#"
+            ><img src="./Images/icon_search.png" alt="Search button"
+          /></a>
+        </div>
+        <a href="#"
+          ><img src="./Images/icon_gear.png" alt="Gear icon" width="20px" />
+          Advanced search</a
+        >
+      </div>
+      <div class="search_buttons">
+        <button>All Results (975,951)</button>
+        <button id="active_button">Catalog (529,991)</button>
+        <button>Our Site (14,479)</button>
+        <button>Events & Classes (4,807)</button>
+      </div>
+      <div class="search_results">
+        <div class="sorted">
+          <div class="sorted_info">
+            <select name="importance" id="priority">
+              <option value="low">Sorted by- Most Popular</option>
+              <option value="low">Sorted by- Recent Releases</option>
+              <option value="low">Sorted by- By Author</option>
+              <option value="low">BSorted by- y Title</option>
+            </select>
+          </div>
+        </div>
+        <div class="catalog_filter">
+          <div class="filter_section">
+            <h3>Catalog Filters</h3>
+            <div class="filter_section_info">
+              <button>Available Now</button>
+              <button>Online Only</button>
+              <button>On Order</button>
+            </div>
+          </div>
+          <div class="filter_section">
+            <h4>Age</h4>
+            <div class="filter_section_info">
+              <button>Kids</button>
+              <button>Teens</button>
+              <button>Adults</button>
+            </div>
+          </div>
+          <div class="filter_section">
+            <h4>Format</h4>
+            <div class="filter_section_info">
+              <button>Book</button>
+              <button>eBook</button>
+              <button>Audiobook</button>
+              <select class="dropdown" name="importance" id="priority">
+                <option value="low">Show more formats</option>
+                <option value="low">Online Journal</option>
+                <option value="low">DVD</option>
+                <option value="low">Photograph</option>
+              </select>
+            </div>
+          </div>
+          <div class="filter_section_input">
+            <h4>Tags</h4>
+            <div class="filter_section_icon">
+              <input type="text" placeholder="Browse related tags..." />
+              <a href="#"
+                ><img src="./Images/icon_search.png" alt="Search button"
+              /></a>
+            </div>
+          </div>
+          <div class="filter_section">
+            <h4>Language</h4>
+            <div class="filter_section_language">
+              <div class="language_english">
+                <input
+                  type="checkbox"
+                  class="language_select"
+                  id="eng"
+                  value="English"
+                />
+                <label for="eng">English</label>
+              </div>
+              <div class="language_spanish">
+                <input
+                  type="checkbox"
+                  class="language_select"
+                  id="espan"
+                  value="Español | Spanish"
+                />
+                <label for="espan">Español | Spanish</label>
+              </div>
+              <div class="language_chinese">
+                <input
+                  type="checkbox"
+                  class="language_select"
+                  id="chi"
+                  value="中文 | Chinese"
+                />
+                <label for="chi">中文 | Chinese</label>
+              </div>
+              <select class="dropdown" name="importance" id="priority">
+                <option value="low">Show more languages</option>
+                <option value="low">Française | French</option>
+                <option value="low">русский | Russian</option>
+                <option value="low">عربى | Arabic</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="search_results_books">
+          <div class="results_books">
+            <div class="results_books_info">
+              <img
+                src="./Images/list_book1.png"
+                alt="Diary of a wimpy kid: dog days"
+              />
+              <h3>Search: Catalog</h3>
+              <h2>Diary of a Wimpy Kid: Dog Days</h2>
+              <p>
+                <span class="green_highlight">Available now</span> at
+                <span class="bold_highlight">Bay Ridge Community Library</span>
+                and
+                <a href="#"
+                  >7 others<img src="./Images/icon_downArrow.png"
+                /></a>
+              </p>
+              <p>
+                Author: Jeff Kinney Call Number: J FIC KINNEY Published: 2009
+              </p>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni
+                perspiciatis autem repellat vel voluptas doloribus vero, debitis
+                odit itaque quas ullam dolores veritatis laboriosam porro
+                voluptates deleniti, distinctio atque provident?
+              </p>
+              <div class="results_books_tags">
+                <button>Chapter books</button>
+                <button>Children's stories</button>
+                <button>Diaries</button>
+                <button>Diary fiction</button>
+                <button>Domestic fiction</button>
+                <button>Friendship</button>
+                <button>Humorous fiction</button>
+              </div>
+            </div>
+          </div>
+          <div class="results_books">
+            <div class="results_books_info">
+              <img
+                src="./Images/list_book2.png"
+                alt="Diary of a wimpy kid: rodrick rules"
+              />
+              <h3>Search: Catalog</h3>
+              <h2>Diary of a Wimpy Kid: Rodrick Rules</h2>
+              <p>
+                <span class="green_highlight">Available now</span> at
+                <span class="bold_highlight">Bay Ridge Community Library</span>
+                and
+                <a href="#"
+                  >7 others<img src="./Images/icon_downArrow.png"
+                /></a>
+              </p>
+              <p>
+                Author: Jeff Kinney Call Number: J FIC KINNEY Published: 2009
+              </p>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni
+                perspiciatis autem repellat vel voluptas doloribus vero, debitis
+                odit itaque quas ullam dolores veritatis laboriosam porro
+                voluptates deleniti, distinctio atque provident?
+              </p>
+              <div class="results_books_tags">
+                <button>Chapter books</button>
+                <button>Children's stories</button>
+                <button>Diaries</button>
+                <button>Diary fiction</button>
+                <button>Domestic fiction</button>
+                <button>Friendship</button>
+                <button>Humorous fiction</button>
+              </div>
+            </div>
+          </div>
+          <div class="results_books">
+            <div class="results_books_info">
+              <img
+                src="./Images/list_book3.png"
+                alt="Diary of a wimpy kid: the last straw"
+              />
+              <h3>Search: Catalog</h3>
+              <h2>Diary of a Wimpy Kid: The Last Straw</h2>
+              <p>
+                <span class="green_highlight">Available now</span> at
+                <span class="bold_highlight">Bay Ridge Community Library</span>
+                and
+                <a href="#"
+                  >7 others<img src="./Images/icon_downArrow.png"
+                /></a>
+              </p>
+              <p>
+                Author: Jeff Kinney Call Number: J FIC KINNEY Published: 2009
+              </p>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni
+                perspiciatis autem repellat vel voluptas doloribus vero, debitis
+                odit itaque quas ullam dolores veritatis laboriosam porro
+                voluptates deleniti, distinctio atque provident?
+              </p>
+              <div class="results_books_tags">
+                <button>Chapter books</button>
+                <button>Children's stories</button>
+                <button>Diaries</button>
+                <button>Diary fiction</button>
+                <button>Domestic fiction</button>
+                <button>Friendship</button>
+                <button>Humorous fiction</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
