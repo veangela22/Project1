@@ -349,7 +349,6 @@ legend {
 }
 
 .search_results {
-    border: red solid 3px;
     display: grid;
     grid-template-columns: 2fr 350px;
     grid-template-rows: 50px ;
@@ -465,20 +464,79 @@ legend {
 }
 
 .search_results_books {
-    border: rgb(179, 65, 240) solid 3px;
     padding: 10px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
 }
 
+.results_books {
+    display: flex;
+    justify-content: space-between;
+    gap: 5em;
+    border-bottom: #22235F solid 3px;
+    padding: 30px 15px 30px 0px;
+}
+
+.results_books img {
+    width: 150px;
+    height: 250px;
+    object-fit: contain;
+}
+
 .results_books_info {
-    border: green solid 3px;
-    padding: 10px;
+    color: #22235F;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+#subtitle {
+    color: #EB4852;
+    font-weight: 400;
+    text-decoration: underline;
+    font-size: 1.5em;
+}
+
+.results_books_info p {
+    font-size: 13px;
+}
+
+.results_books_info a {
+    color: #22235F;
+    font-weight: 700;
+}
+
+.results_books_info img{
+    width: 15px;
+    height: 15px;
+    object-fit: contain;
+}
+
+.green_highlight {
+    color: #027A2B;
+    font-weight: 700;
+}
+
+.bold_highlight {
+    font-weight: 700;
 }
 
 .results_books_tags {
-    border: blue solid 3px;
-    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5em;
+    width: 400px;
 }
+
+.results_books_tags button {
+    background-color: white;
+    border: #22235F solid 3px;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+    color: #22235F;
+}
+
+
 /* Catalog page ends */
