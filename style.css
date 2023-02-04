@@ -15,7 +15,7 @@ button {
 }
 
 
-/* Navigation Begins */
+/* NAVIGATION BEGINS */
 .topnav {
     height: 60px;
     font-weight: 400;
@@ -68,9 +68,9 @@ button {
     color: #22235F;
     text-decoration: none;
 }
-/* Navigation Ends */
+/* NAVIGATION ENDS */
 
-/* Homepage */
+/* HOMEPAGE */
 .landing {
     display: flex;
     flex-direction: column;
@@ -112,7 +112,7 @@ button {
     cursor: pointer;
 }
 
-/* Homepage- popular books */
+/* HOMEPAGE- POPULAR BOOKS */
 .popular {
     background-color: white;
     margin: 30px;
@@ -155,9 +155,9 @@ button {
         font-size: 12px;
     }
 }
-/* Homepage ends */
+/* HOMEPAGE ENDS */
 
-/* About page begins */
+/* ABOUT PAGE BEGINS */
 
 .about {
     margin: 50px;
@@ -196,9 +196,9 @@ button {
     gap: 2em;
 }
 
-/* About page ends */
+/* ABOUT PAGE ENDS */
 
-/* Log in Page begins */
+/* LOG IN PAGE BEGINS */
 
 .login {
     margin: 50px;
@@ -277,9 +277,9 @@ legend {
     font-weight: 700;
     font-size: 13px;
 }
-/* Log in Page ends */
+/* LOG IN PAGE ENDS */
 
-/* Catalog page Begins */
+/* CATALOG PAGE BEGINS */
 .catalog {
     margin: 50px 75px 0px 150px;
 }
@@ -543,9 +543,9 @@ legend {
 }
 
 
-/* Catalog page ends */
+/* CATALOG PAGE ENDS */
 
-/* Book description beings */
+/* BOOK DESCRIPTION BEGINS */
 
 .description_title {
     color: #22235F;
@@ -741,4 +741,4 @@ legend {
     font-weight: 700;
 }
 
-/* Book description ends */
+/* BOOK DESCRIPTION ENDS */
