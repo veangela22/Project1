@@ -10,6 +10,10 @@ body {
     background-color: #f5f5f5;
 }
 
+button {
+    cursor: pointer;
+}
+
 
 /* Navigation Begins */
 .topnav {
@@ -540,3 +544,201 @@ legend {
 
 
 /* Catalog page ends */
+
+/* Book description beings */
+
+.description_title {
+    color: #22235F;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 1em;
+    margin: 75px 250px;
+}
+
+.description_title h2 {
+    font-weight: 400;
+}
+
+.book_description_cover {
+    margin: 0px 250px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.book_description_container {
+    color: #22235F;
+}
+
+.like_buttons {
+    display: flex;
+    gap: 1em;
+    padding-bottom: 20px;
+}
+
+.like_buttons i {
+    color: white;
+    padding-right: 10px;
+}
+
+.like_buttons button {
+    font-size: 18px;
+    background-color: #22235F;
+    border-radius: 5px;
+    font-weight: 400;
+    color: white;
+    padding: 15px;
+    border-style: none;
+}
+
+.book_description_formats {
+    display: grid;
+    grid-template-columns: 100px 100px 110px;
+    margin: 10px 0px;
+    gap: 1em;
+}
+
+.book_description_formats_info {
+    border: #22235F solid 3px;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 13px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .2em;
+}
+
+.book_description_formats_info h5 {
+    padding-bottom: 5px;
+}
+
+.book_description_formats_info p {
+    text-align: center;
+}
+
+.book_description_details {
+    font-size: 13px;
+}
+
+.green_available {
+    color: #027A2B;
+}
+
+.red_waitlist {
+    color: #EB4852;
+}
+
+.book_summary {
+    margin: 50px 250px;
+    border-bottom: #22235F solid 3px;
+    padding-bottom: 30px;
+    color: #22235F;
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+}
+
+.ratings_reviews {
+    margin: 50px 250px;
+    border-bottom: #22235F solid 3px;
+    padding-bottom: 30px;
+    color: #22235F;
+    display: flex;
+    flex-direction: column;
+}
+
+.star_rating {
+    color: gold;
+}
+
+.star_write_review {
+    font-size: 25px;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0px;
+}
+
+.star_write_review button {
+    border: #22235F solid 3px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #f5f5f5;
+    color: #22235F;
+}
+
+.top_reviews_person {
+    display: flex;
+    gap: 1em;
+    font-size: 14px;
+}
+
+.written_reviews {
+    padding: 5px 0px 20px 0px;
+}
+
+.written_reviews a {
+    color: #22235F;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+#read_more {
+    align-self: center;
+    padding: 10px;
+    color: #22235F;
+    font-weight: 700;
+}
+
+.book_description_tags {
+    margin: 0px 250px;
+    color: #22235F;
+    border-bottom: #22235F solid 3px;
+}
+
+.description_tags_buttons {
+    display: flex;
+    gap: .5em;
+    padding: 10px 0px 30px 0px;
+}
+
+.description_tags_buttons button {
+    border: #22235F solid 3px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #f5f5f5;
+    color: #22235F;
+}
+
+.book_suggestions {
+    margin: 40px 250px;
+    color: #22235F;
+}
+
+.book_suggestions_container {
+    display: flex;
+    gap: 3em;
+}
+
+.book_suggestions_info {
+    color: #22235F;
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+}
+
+.book_suggestions_info img {
+    width: 110px;
+    height: 175px;
+    align-self: center;
+    margin: 30px 0px;
+}
+
+.book_suggestions_info a {
+    color: #22235F;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+/* Book description ends */
