@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://kit.fontawesome.com/f21ef04280.css"
+      crossorigin="anonymous"
+    />
+    <title>Recent Checkouts</title>
+  </head>
+  <body>
+    <nav class="topnav">
+      <div class="nav_left">
+        <a href="index.html"
+          ><img
+            src="./Images/logo.png"
+            alt="Community Library Logo"
+            width="200px"
+        /></a>
+      </div>
+      <div class="nav_right">
+        <a href="login.html">Log In</a>
+        <a href="#">Locations</a>
+        <a href="#">Get a Library Card</a>
+        <a href="about.html">About Us</a>
+        <button class="donate">Donate</button>
+      </div>
+    </nav>
+    <main class="checkout">
+      <div class="checkout_list_icon">
+        <button><i class="fa-solid fa-list-ul"></i>Check out list</button>
+      </div>
+      <div class="checkout_search_container">
+        <div class="checkout_search_input">
+          <div class="checkout_search_icon">
+            <input type="text" placeholder="Search" />
+            <a href="#"
+              ><img src="./Images/icon_search.png" alt="Search button"
+            /></a>
+          </div>
+        </div>
+        <button>Filter</button>
+      </div>
+      <div class="checkout_table_container">
+        <table>
+          <colgroup>
+            <col span="1" />
+          </colgroup>
+          <tr class="table_header">
+            <th class="icon_box">
+              <i class="fa-regular fa-circle"></i>
+              <a href="#"><i class="fa-solid fa-angle-down"></i></a>
+            </th>
+            <th>Name</th>
+            <th>Barcode Number</th>
+            <th>Return Date</th>
+            <th>Pick Up Date</th>
+            <th>Actual Return Date</th>
+            <th>Overdue Fee</th>
+          </tr>
+          <tr>
+            <td>
+              <span class="bold_highlight">1</span
+              ><button class="starred">
+                <i class="fa-regular fa-star"></i>
+              </button>
+            </td>
+            <td>Book 1</td>
+            <td>123456789123456789</td>
+            <td>01/05/2023</td>
+            <td>01/02/2023</td>
+            <td>Pending</td>
+            <td>$0</td>
+          </tr>
+          <tr>
+            <td>
+              <span class="bold_highlight">2</span
+              ><button class="starred">
+                <i class="fa-regular fa-star"></i>
+              </button>
+            </td>
+            <td>Book 2</td>
+            <td>123456789123456789</td>
+            <td>10/14/2022</td>
+            <td>10/04/2022</td>
+            <td><span class="red_waitlist">01/04/2023</span></td>
+            <td><span class="red_waitlist">$5.50</span></td>
+          </tr>
+          <tr>
+            <td>
+              <span class="bold_highlight">3</span
+              ><button class="starred">
+                <i class="fa-regular fa-star"></i>
+              </button>
+            </td>
+            <td>Book 3</td>
+            <td>123456789123456789</td>
+            <td>08/19/2022</td>
+            <td>08/09/2022</td>
+            <td><span class="red_waitlist">09/09/2022</span></td>
+            <td><span class="red_waitlist">$2</span></td>
+          </tr>
+          <tr>
+            <td>
+              <span class="bold_highlight">4</span
+              ><button class="starred">
+                <i class="fa-regular fa-star"></i>
+              </button>
+            </td>
+            <td>Book 4</td>
+            <td>123456789123456789</td>
+            <td>05/22/2022</td>
+            <td>05/12/2022</td>
+            <td>05/22/2022</td>
+            <td>$0</td>
+          </tr>
+          <tr>
+            <td>
+              <span class="bold_highlight">5</span
+              ><button class="starred">
+                <i class="fa-regular fa-star"></i>
+              </button>
+            </td>
+            <td>Book 5</td>
+            <td>123456789123456789</td>
+            <td>04/22/2022</td>
+            <td>03/22/2022</td>
+            <td><span class="red_waitlist">05/22/2022</span></td>
+            <td><span class="red_waitlist">$1</span></td>
+          </tr>
+        </table>
+      </div>
+    </main>
+  </body>
+</html>
