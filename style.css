@@ -141,20 +141,6 @@ button {
 .more_arrow {
     align-self: center;
 }
-
-@media (max-width: 768px) {
-    .popular_books {
-        flex-direction: column;
-        display: flex;
-        text-align: center;
-        justify-content: space-between;
-        gap: 2em;
-    }
-
-    .nav_right {
-        font-size: 12px;
-    }
-}
 /* HOMEPAGE ENDS */
 
 /* ABOUT PAGE BEGINS */
@@ -541,8 +527,6 @@ legend {
     cursor: pointer;
     color: #22235F;
 }
-
-
 /* CATALOG PAGE ENDS */
 
 /* BOOK DESCRIPTION BEGINS */
@@ -859,4 +843,409 @@ col {
     color: #22235F;
     padding-left: 10px;
     background-color: #d3d4e6;
+}
+/* CHECKOUT PAGE ENDS */
+
+/* MEDIA QUERIES: TABLET SCREEN */
+/* MEDIA QUERIES- HOMEPAGE */
+@media (max-width: 770px) {
+    .popular_books {
+        flex-direction: column;
+        display: flex;
+        text-align: center;
+        justify-content: space-between;
+        gap: 2em;
+    }
+
+    .nav_right {
+        font-size: 12px;
+    }
+
+    /* MEDIA QUERIES- ABOUT PAGE */
+    .about_library {
+        font-size: 1em;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about_info {
+        padding-bottom: 2em;
+    }
+
+    .about_info img {
+        padding-left: 3em;
+    }
+
+    .about_photos {
+        flex-wrap: wrap;
+    }
+
+    .about_photos img {
+        display: flex;
+        width: 40%;
+    }
+
+    /* MEDIA QUERIES- LOGIN PAGE */
+    .login {
+        display: flex;
+        flex-direction: column;
+        gap: 3em;
+    }
+
+    .library_card {
+        align-self: center;
+    }
+
+    /* MEDIA QUERIES- CATALOG */
+    .catalog {
+        margin: 1em;
+    }
+
+    .catalog_search {
+        width: 45em;
+        padding: 20px 0px;
+    }
+
+    .search_buttons {
+        width: 45em;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: .1em;
+        padding-bottom: 20px;
+    }
+
+    .search_results {
+        display: grid;
+        grid-template-columns: 2fr;
+        grid-template-rows: 50px ;
+    }
+
+    .sorted_info {
+        width: 300px;
+        height: 50px;
+    }
+
+    .catalog_filter {
+        grid-column: span 2;
+        height: 20em;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: .2em;
+    }
+
+    .filter_section {
+        border: #22235F solid 2px;
+        display: flex;
+        flex-direction: row;
+        line-height: 30px;
+        gap: 1em;
+        padding: 5px;
+    }
+
+    .filter_section_input {
+        border: #22235F solid 2px;
+        width: 300px;
+        display: flex;
+        flex-direction: row;
+        gap: 1em;
+        padding: 10px;
+    }
+
+    /* MEDIA QUERIES- BOOK DESCRIPTION */
+    .description_title {
+        margin: 1em;
+    }
+
+    .book_description_cover {
+        margin: 1em;
+    }
+
+    .book_summary {
+        margin: 1em;
+    }
+
+    .ratings_reviews {
+        margin: 1em;
+    }
+
+    .book_description_tags {
+        margin: 1em;
+    }
+
+    .book_suggestions {
+        margin: 1em;
+    }
+
+    /* MEDIA QUERIES- CHECKOUT PAGE */
+    table {
+        width: 70%;
+    }
+
+    th, td {
+        padding: 12px;
+        text-align: center;
+    }
+}
+
+/* MEDIA QUERIES: PHONE SCREEN */
+/* MEDIA QUERIES- HOMEPAGE */
+@media (max-width: 400px) {
+    .topnav {
+        display: block;
+        padding-bottom: 5em;
+    }
+
+    .landing {
+        background-size: cover;
+        height: 200px;
+    }
+
+    .landing_search input {
+        width: 250px;
+        height: 20px;
+        border-radius: 5px;
+        border: none;
+    }
+
+    .landing_search a {
+        margin-top: 5px;
+        color: rgb(231, 231, 231);
+        font-size: 12px;
+    }
+
+    .landing_search_icon {
+        background-color: white;
+        border: black solid 2px;
+        border-radius: 5px;
+        padding: 5px;
+        display: flex;
+        align-items: center;
+    }
+
+    /* MEDIA QUERIES- ABOUT PAGE */
+    .about {
+        display: flex;
+        flex-direction: column;
+        margin: 1em;
+    }
+
+    .sidenav {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 100%;
+        height: auto;
+        gap: 1em;
+        padding-bottom: 1em;
+    }
+
+    .about_info {
+        height: 45em;
+        padding-bottom: 2em;
+    }
+
+    .about_info img {
+        width: 100%;
+        height: 30%;
+        padding-left: 0em;
+        align-self: flex-end;
+    }
+
+    .about_photos {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .about_photos img {
+        width: 75%;
+    }
+
+    /* MEDIA QUERIES- LOGIN PAGE */
+    .form_information input {
+        width: 250px;
+    }
+
+    /* MEDIA QUERIES- CATALOG */
+    .catalog {
+        margin: .5em;
+    }
+
+    .catalog_search {
+        width: 23em;
+        padding: 5px 0px;
+    }
+
+    .search_buttons {
+        width: 20em;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: .1em;
+        padding-bottom: 20px;
+    }
+
+    .search_results {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 50px ;
+    }
+
+    .sorted_info {
+        width: 375px;
+        height: 50px;
+    }
+
+    .catalog_filter {
+        display: none;
+    }
+
+    .search_results_books {
+        width: 100%;
+        padding: 0px;
+    }
+
+    .results_books {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 1.5em;
+        width: 100%;
+        border-bottom: #22235F solid 3px;
+        padding-top: 20px;
+    }
+
+    .results_books img {
+        width: 150px;
+        height: 250px;
+        object-fit: contain;
+        align-self: center;
+    }
+
+    .results_books_info {
+        color: #22235F;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        gap: 1em;
+        margin-left: 1em;
+    }
+
+    .results_books_info p {
+        font-size: 1em;
+    }
+
+    .results_books_info img{
+        width: 15px;
+        height: 15px;
+        object-fit: contain;
+    }
+
+    .results_books_tags {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        gap: .5em;
+        width: 300px;
+    }
+
+    /* MEDIA QUERIES- BOOK DESCRIPTION */
+    .description_title {
+        text-align: center;
+    }
+
+    .book_description_cover {
+        margin: 1em;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .book_description_cover img {
+        width: 50%;
+        align-self: center;
+        padding-bottom: .5em;
+    }
+
+    .book_description_container {
+        color: #22235F;
+        font-size: 1em;
+    }
+
+    .like_buttons {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 20px;
+    }
+
+    .book_description_formats {
+        display: grid;
+        grid-template-columns: 100px 100px 100px;
+        margin: 10px 0px;
+        gap: 1em;
+    }
+
+    .book_summary {
+        margin: 1em;
+    }
+
+    .ratings_reviews {
+        margin: 1em;
+    }
+
+    .top_reviews_person {
+        display: flex;
+        justify-content: space-around;
+        gap: 1em;
+    }
+
+    .written_reviews {
+        padding-bottom: 3em;
+    }
+
+    .book_description_tags {
+        margin: 1em;
+        border-bottom: #22235F solid 3px;
+    }
+
+    .description_tags_buttons {
+        display: flex;
+        flex-wrap: wrap;
+        gap: .5em;
+        padding: 10px 0px 30px 0px;
+    }
+
+    .book_suggestions {
+        margin: 1em;
+    }
+
+    .book_suggestions_container {
+        display: flex;
+        flex-direction: column;
+        gap: 0em;
+    }
+
+    .book_suggestions_info {
+        color: #22235F;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: .5em;
+        padding-top: 20px;
+    }
+
+    .book_suggestions_info img {
+        width: 110px;
+        height: 175px;
+        margin: 0px;
+    }
+
+    /* MEDIA QUERIES- CHECKOUT PAGE */
+    table {
+        width: 30%;
+    }
+
+    .checkout_table_container {
+        display: block;
+        overflow-x: auto;
+        margin: .5em;
+    }
 }
